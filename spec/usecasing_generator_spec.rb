@@ -8,7 +8,7 @@ describe UsecasingGenerator do
 
   context "rails generate" do
 
-    let(:file_path) { "app/usecase/finalize.rb" }
+    let(:file_path) { "app/usecases/finalize.rb" }
 
     context "usecasing without dependencies" do
     
