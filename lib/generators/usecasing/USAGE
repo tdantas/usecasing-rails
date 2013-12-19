@@ -1,0 +1,8 @@
+Description:
+    Explain the generator
+
+Example:
+    rails generate usecase finalize_invoice
+
+    This will create:
+        what/will/it/create

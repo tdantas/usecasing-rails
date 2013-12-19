@@ -1,0 +1,5 @@
+class <%= class_name %> <%= "< UseCase::Base" %>
+<%- if depends.any? -%>
+  depends <%= depends.map(&:classify).join(", ") %>
+<%- end -%>
+end
