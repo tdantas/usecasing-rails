@@ -30,8 +30,6 @@ module RailsAppHelper
     run_simple cmd
   end
 
-
-
 end
 
 

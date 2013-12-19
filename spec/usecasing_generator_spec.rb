@@ -50,6 +50,28 @@ describe UsecasingGenerator do
       end
 
     end
-  end
+  
+    context "namespacing" do 
 
+      let(:file_path) { "app/usecases/namespace/finalize.rb" }
+       
+      it "generates namespaced usecase" do
+        rails_generate_usecase "namespace::finalize"
+        check_file_presence([file_path], true)
+      end
+
+
+      it "generates directory in downcase" do 
+        rails_generate_usecase "NAMESPACE::finalize"
+        check_file_presence([file_path], true)
+      end
+
+
+      it "generates multiple level" do 
+        rails_generate_usecase "NAMESPACE::SECOND::finalize"
+        check_file_presence(['app/usecases/namespace/second/finalize.rb'], true)
+      end
+
+    end
+  end
 end

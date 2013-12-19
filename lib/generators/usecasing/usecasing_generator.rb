@@ -5,7 +5,7 @@ class UsecasingGenerator < Rails::Generators::NamedBase
   source_root File.expand_path('../templates', __FILE__)
 
   def generate
-    template "usecase.erb", "app/usecases/#{file_name}.rb"
+    template "usecase.erb", "app/usecases/#{name.underscore.downcase}.rb"
   end
 
 end
