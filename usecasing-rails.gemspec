@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name          = "usecasing-rails"
-  gem.version       = '0.0.3'
+  gem.version       = '0.1.0'
   gem.authors       = ["Thiago Dantas"]
   gem.email         = ["thiago.teixeira.dantas@gmail.com"]
   gem.description   = %q{Usecase Rails Generator}
@@ -23,6 +23,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "bundler", '1.2.3'
 
 
-  gem.add_runtime_dependency   'usecasing', '0.0.1'
+  gem.add_runtime_dependency   'usecasing', '0.1.0'
 
 end
