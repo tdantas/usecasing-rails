@@ -1,6 +1,6 @@
-# Usecasing::Rails
+# usecasing-rails
 
-TODO: Write a gem description
+Rails usecase generator 
 
 ## Installation
 
@@ -15,10 +15,30 @@ And then execute:
 Or install it yourself as:
 
     $ gem install usecasing-rails
+    
 
 ## Usage
 
-TODO: Write usage instructions here
+**Generate usecase without dependency**
+
+
+````
+rails generate usecasing FinalizeInvoice
+````
+
+**Generate usecase with dependencies**
+
+````
+rails generate usecasing FinalizeInvoice ValidateInvoice
+````
+
+**Generate with namespace folder**
+
+````
+rails generate usecasing Invoices::FinalizeInvoices ValidateInvoice
+````
+
+
 
 ## Contributing
 
