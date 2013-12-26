@@ -20,7 +20,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rails', '3.2.16'
   gem.add_development_dependency 'rspec', '2.14.1'
   gem.add_development_dependency 'aruba', '0.5.3'
-  gem.add_development_dependency "bundler", '1.2.3'
+  gem.add_development_dependency "bundler", '1.3.5'
 
 
   gem.add_runtime_dependency   'usecasing', '0.1.4'
