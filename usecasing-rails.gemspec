@@ -23,6 +23,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "bundler", '1.2.3'
 
 
-  gem.add_runtime_dependency   'usecasing', '0.1.0'
+  gem.add_runtime_dependency   'usecasing', '0.1.4'
 
 end
